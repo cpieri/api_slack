@@ -13,6 +13,6 @@ def invite_users2chan(users, chan_id, token, is_private):
 			'channel': chan_id,
 			'user': user['id']
 		}
-		r = requests.post('https://piscines101.slack.com/api/{private}.invite'.format(private=channel), params)
+		r = requests.post('https://piscines101.slack.com/api/{private}.invite'.format(private=channel), params).json()
 		print(user['name'], r['ok'])
 		time.sleep(1)
