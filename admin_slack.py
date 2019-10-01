@@ -8,7 +8,7 @@ def	choose():
 	ask = """Welcome !! Here you can choose to perform actions easily on your slack :)\nChoose a number:
 	1) for delete all messages from specific channel
 	2) for create new channel or private channel
-	3)
+	3) for invite users to an existing channel 
 	4) for exit\n"""
 	user_response = input(ask)
 	return (int(user_response))
