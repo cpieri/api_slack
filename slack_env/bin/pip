@@ -1,5 +1,4 @@
-#!/Users/louise/api_slack/slack_env/bin/python3
-
+#!/Users/cpieri/42/api_slack/slack_env/bin/python3
 # -*- coding: utf-8 -*-
 import re
 import sys
