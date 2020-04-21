@@ -6,7 +6,7 @@ def list_channel(token):
 	pink = '\033[38;5;206m'
 	cyan = '\033[36m'
 	endl = '\033[0m'
-	channels = requests.get('https://slack.com/api/{type}.list?limit=100&token={t}&types=public_channel,private_channel'.format(type='conversations', t=token)).json()
+	channels = requests.get('https://slack.com/api/{type}.list?limit=100&token={t}&types=public_channel,private_channel,mpim'.format(type='conversations', t=token)).json()
 	chans = channels['channels']
 	for chan in chans:
 		if chan['is_private']:
